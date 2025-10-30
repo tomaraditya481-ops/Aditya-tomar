@@ -1,0 +1,83 @@
+10.30 2:49 PM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Resume</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+  }
+  h1, h2 {
+    color: #2c3e50;
+  }
+  .section {
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  a {
+    color: #2980b9;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>John Doe</h1>
+    <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a> | Phone: 123-456-7890 | Location: City, Country</p>
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Node.js</li>
+        <li>Python, SQL</li>
+        <li>Responsive Web Design</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Experience</h2>
+      <h3>Front-End Developer - ABC Corp</h3>
+      <p>January 2023 - Present</p>
+      <ul>
+        <li>Developed user interfaces for ecommerce website.</li>
+        <li>Improved website performance by 30% through optimization techniques.</li>
+      </ul>
+      <h3>Web Developer Intern - XYZ Ltd</h3>
+      <p>June 2022 - December 2022</p>
+      <ul>
+        <li>Assisted in developing company intranet site.</li>
+        <li>Maintained and updated existing websites and applications.</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Education</h2>
+      <p>Bachelor of Science in Computer Science <br />University of Somewhere, 2022</p>
+    </div>
+    <div class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li>Portfolio Website - Developed a responsive portfolio to showcase my work.</li>
+        <li>Task Manager App - Built a task management app using React and Node.js.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
