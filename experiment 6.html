@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Product Page</title>
+    <style>
+        body{
+            font-family: Arial;
+            background: #f2f2f2;
+            padding: 20px;
+        }
+
+        .card{
+            width: 700px;
+            background: #fff;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .main-img{
+            width: 100%;
+            height: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        .main-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .thumbs{
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .thumbs img{
+            width: 100px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 6px;
+            cursor: pointer;
+            border: 1px solid #bbb;
+            transition: 0.3s;
+        }
+
+        .thumbs img:hover{
+            transform: scale(1.05);
+        }
+
+        .title{
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .price{
+            font-size: 22px;
+            color: #2b6cff;
+            margin: 5px 0;
+        }
+
+        .old-price{
+            text-decoration: line-through;
+            color: gray;
+            font-size: 14px;
+        }
+
+        .btn{
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .buy{
+            background: #2b6cff;
+            color: #fff;
+        }
+
+        .wish{
+            background: #fff;
+            border: 1px solid #2b6cff;
+            color: #2b6cff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+
+    <!-- Main Nike Shoe Image -->
+    <div class="main-img" id="mainImgBox">
+        <img id="mainImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0SC0mQg_TfGcN9q3RY3L2n1m7yxBQ2J6jbA&s" alt="Nike Shoes">
+    </div>
+
+    <!-- Nike Thumbnails -->
+    <div class="thumbs">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSbQ6wYkBeGKZzjl-EXX8asc7KKGXG6GrUxYCjj8XdYopbNpK5rlpsB6XUChjCQzh56D14D-OCftybS230A0PCsIQidp-a3TMm0tYYTeNFmFb1fYW_luZTHv8kVARsmUK1ikrdxbQ&usqp=CAc" onclick="swap(this)">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTqsZB2mCpc-Rq7aN6TjTX7PDgTWEZnc3eiEP7Y3goOZn_Iy2emQL_8RWyI2H00E0VpyycE_j9Onb6uT0XRP7eLeCPzY-prJpmjtWTWptBpSbaEVIEZ-ZYWE-xVmVVu6zS1YDznFQ&usqp=CAc" onclick="swap(this)">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTfCEcmOuNyavu1rpm7OiVv7QrPDYDwm9iqYqfRed2XlMbGx4GkrrLWWCJao_pD5Rs9BQ3lYWK28QI_zBz1QmjMZyEYh2YOYz5e6sxsulQA2uUtQoMbnyS-8miA-ZOBqegphqWNKw&usqp=CAc" onclick="swap(this)">
+    </div>
+
+    <!-- Details -->
+    <h2 class="title">Nike Running Shoes – Premium Edition</h2>
+
+    <div class="price">₹3,999</div>
+    <div class="old-price">₹5,299</div>
+
+    <p>
+        High-quality Nike running shoes designed for comfort, durability 
+        and top performance. Perfect for daily running, training and sports.
+    </p>
+
+    <button class="btn buy">Add to Cart</button>
+    <button class="btn wish">Wishlist</button>
+
+</div>
+
+<script>
+    function swap(img){
+        document.getElementById("mainImg").src = img.src;
+    }
+</script>
+
+</body>
+</html>
