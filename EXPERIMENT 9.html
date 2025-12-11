@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Product Grid - Watches</title>
+    <style>
+        body{
+            font-family: Arial;
+            background: #f2f2f2;
+            padding: 20px;
+        }
+
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card{
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+
+        .card img{
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .pname{
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0 5px;
+        }
+
+        .pdesc{
+            color: #555;
+            font-size: 14px;
+        }
+
+        .price{
+            margin-top: 8px;
+            font-weight: bold;
+            color: green;
+        }
+
+        /* Tablet (2 per row) */
+        @media(max-width:1024px){
+            .grid-container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Mobile (1 per row) */
+        @media(max-width:600px){
+            .grid-container{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Responsive Product Grid - Rolex Watches</h2>
+
+    <div class="grid-container">
+
+        <div class="card">
+            <img src="https://img.tatacliq.com/images/i23//658Wx734H/MP000000025936609_658Wx734H_202503302227121.jpeg">
+            <div class="pname">Rolex Submariner</div>
+            <div class="pdesc">Iconic diving watch with premium steel finish.</div>
+            <div class="price">₹ 7,50,000</div>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRyuCgDtu9bO0j-XhhMdlPp7x8i_U3_SmUOWCpXMPwsTKXT-vykp3_XVcXSMb_9LaHwK4ge0TQm9NhnPqMznxDJlOe-EXy27mE7FdPCrVlt2b_Fslt0XTRgqfF2H6fEsMGp3uLj6bY&usqp=CAc">
+            <div class="pname">Rolex Daytona</div>
+            <div class="pdesc">Sporty chronograph with high precision.</div>
+            <div class="price">₹ 12,20,000</div>
+        </div>
+
+        <div class="card">
+            <img src="data:image/jpeg;base64,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">
+            <div class="pname">Rolex Oyster Perpetual</div>
+            <div class="pdesc">Lightweight, classic and durable everyday watch.</div>
+            <div class="price">₹ 5,30,000</div>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR9sZCOFBJ-qYVDzir5COEZM8UxE1OndhDiVf2v326MoZoqCxEHBMoOfZK-D4W6nAhO82sZFyboY5qURoYdecIVUfjGD5VmqHQs4_D4vSKTxv2rQquPeaYHRIsbfg&usqp=CAc">
+            <div class="pname">Rolex Datejust</div>
+            <div class="pdesc">Elegant design with premium quality.</div>
+            <div class="price">₹ 8,90,000</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
