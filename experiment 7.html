@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Navigation Menu</title>
+
+    <style>
+        /* Block header */
+        h2{
+            background: lightblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Navigation bar */
+        ul{
+            margin: 0;
+            padding: 0;
+            background: #333;
+        }
+
+        ul li{
+            list-style: none;
+            display: inline-block;   /* inline-block for horizontal menu */
+            padding: 10px 15px;
+        }
+
+        ul li a{
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Float example */
+        .box1{
+            width: 50%;
+            float: left;
+            background: #f2f2f2;
+            padding: 10px;
+        }
+
+        .box2{
+            width: 50%;
+            float: right;
+            background: #e6e6e6;
+            padding: 10px;
+        }
+
+        /* Clear float */
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Simple Webpage</h2>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">profile</a></li>
+        <li><a href="#">logout</a></li>
+    </ul>
+
+    <div class="box1">
+        <p>here is aditya tomar (click left).</p>
+    </div>
+
+    <div class="box2">
+        <p>This is my profile (click right).</p>
+    </div>
+
+    <div class="clear"></div>
+
+</body>
+</html>
