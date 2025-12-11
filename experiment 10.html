@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ADITYAS Navbar</title>
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar{
+            width:100%;
+            background:black;
+            color:white;
+            display:flex;
+            align-items:center;
+            padding:10px 20px;
+            justify-content:space-between;
+        }
+
+        .logo img{
+            width:45px;
+            height:45px;
+            border-radius:50%;
+        }
+
+        .menu{
+            display:flex;
+            gap:25px;
+        }
+
+        .menu a{
+            color:white;
+            text-decoration:none;
+            font-size:16px;
+        }
+
+        .right{
+            display:flex;
+            gap:15px;
+        }
+
+        .right a{
+            color:white;
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <!-- Logo here -->
+    <div class="logo">
+        <img src="data:image/png;base64,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" alt="A Logo">
+    </div>
+
+    <!-- Menu Items -->
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Categories</a>
+        <a href="#">Deals</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Right Side -->
+    <div class="right">
+        <a href="#">Cart 🛒</a>
+        <a href="#">Login</a>
+    </div>
+</div>
+
+<h2>Welcome to ADITYAS!</h2>
+<p>Your one-stop destination for all shopping needs.</p>
+
+</body>
+</html>
